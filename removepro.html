@@ -1,0 +1,43 @@
+<html>
+    <style>
+        select
+        {
+            width:200px;
+            height:25px;
+            font-size: 18px;
+        }
+        body
+        {
+            background-color: antiquewhite;
+        }
+        input[type="text"]
+        {
+            width: 200px;
+            height: 25px;
+        }
+        input[type="radio"]
+        {
+            width:15px;
+            height:15px;
+        }
+    </style>
+    <body>
+    <form action="removepro.php" method="POST">
+        <h1>Remove Product Here</h1>
+    <p>Name    :  <input type="text" name="proname" required></p>
+    <p>Image   :  <input type="text" name="proimage" placeholder="Image Name with extension" required></p>
+    <p>Category:  <select name="procat">
+                <option selected value="select">Select</option>
+                <option value="Breads">Breads</option>
+                <option value="Cakes">Cakes</option>
+                <option value="Cookies">Cookies</option>
+                <option value="Cupcakes">Cupcakes</option>
+                <option value="Pastries">Pastries</option>
+                <option value="Snacks">Snacks</option>
+                </select></p>
+    <p>Type     :<input type="radio" name="protype" value="veg.png" required>Veg<input type="radio" name="protype" value="nveg.png" required>Non-Veg</p>
+    <p>Price    :<input type="text" name="proprice" required></p>
+    <input type="submit" value="Remove Product"><input type="reset" style="margin-left:30px;">
+    </form>
+    </body>
+</html>

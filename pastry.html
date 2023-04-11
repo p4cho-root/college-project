@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            ul
+            {
+                background-color: black;
+                overflow:hidden;
+            }
+            li
+            {
+                float: left;
+            }
+            a
+            {
+                text-decoration: none;
+                color: black;
+                font-size: large;
+            }
+
+            li a,.dropbtn
+            {
+                color: white;
+                padding: 20px;
+                display: inline-block;
+                text-align: center;
+                text-decoration:none;
+            }
+            li a:hover, .dropdown:hover .dropbtn
+            {
+                color: cyan;
+            }
+            .dropdown-content a
+            {
+                color: white;
+                padding: 20px;
+                display: block;
+                text-align: left;
+                text-decoration: none;
+            }
+            .dropdown-content a:hover
+            {
+                color:cyan;
+            }
+            .dropdown:hover .dropdown-content
+            {
+                display: block;
+            }
+            .dropdown-content
+            {
+                display: none;
+                background-color: black;
+                color: white;
+                position: absolute;
+            }
+            div.gallery
+            {
+                margin: 30px;
+                border: 2px solid black;
+                float: left;
+                width:150px;
+            }
+            div.gallery:hover
+            {
+                border:2px solid navy;
+            }
+            div.desc
+            {
+                padding: 15px;
+                text-align: center;
+                font-size: 20px;
+                font-style: bold;
+            }
+            .button
+            {
+                
+                height: 30px;
+                font-size: 15px;
+                width: 120px;
+                background-color:red;
+                color:white;
+                border-radius: 15px;
+                border:2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="page1.html">HOME</a></li>
+            <li class="dropdown">
+                <a href="category.html" class="dropbtn">CATEGORY</a>
+                <div class="dropdown-content">
+                    <a href="bread.html">BREAD</a>
+                    <a href="Allcakes.html">CAKES</a>
+                    <a href="cupcake.html">CUPCAKES</a>
+                    <a href="#">CUSTOMIZED CAKES</a>
+                    <a href="cookies.html">COOKIES</a>
+                    <a href="pastry.html">PASTRIES</a>
+                    <a href="snacks.html">SNACKS</a>
+                    
+                </div>
+            </li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="map.html">MAP</a></li>
+            <li><a href="addtocart.php">ADD TO CART</a></li>
+            <li style="float: right;"><a href="profile.php"><img src="user.png" style="width: 25px;height: 25px;"></a></li>
+        </ul>
+   
+       
+            
+     <form action="pastry.php" method="POST">
+             <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="1001.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="1001.jpg" width="200" height="200">        
+                        <div class="desc">Shortcrust Pastry<br><br>
+                            <button class="button" name="pastry" value= "265">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Shortcrust Pastry<br><br>
+                <button class="button" name="pastry" value= "265">Add To Cart</button>
+            </div>
+        </div>
+
+       <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="1002.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="1002.jpg" width="200" height="200">        
+                        <div class="desc">Puff Pastry<br><br>
+                            <button class="button" name="pastry" value= "270">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Puff Pastry<br><br><br>
+                <button class="button" name="pastry" value= "270">Add To Cart</button>
+            </div>
+        </div>
+    
+   <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="1003.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="1003.jpg" width="200" height="200">        
+                        <div class="desc">Flaky Pastry<br><br>
+                            <button class="button" name="pastry" value= "275">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Flaky Pastry<br><br>
+                <button class="button" name="pastry" value= "275">Add To Cart</button>
+            </div>
+        </div>
+
+       <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="1004.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="1004.jpg" width="200" height="200">        
+                        <div class="desc">Rough Puff Pastry<br><br>
+                            <button class="button" name="pastry" value= "280">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Rough Puff Pastry<br><br>
+                <button class="button" name="pastry" value= "280">Add To Cart</button>
+            </div>
+        </div>
+
+       <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="1005.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="1005.jpg" width="200" height="200">        
+                        <div class="desc">Filo Pastry<br><br>
+                            <button class="button" name="pastry" value= "285">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Filo Pastry<br><br><br>
+                <button class="button" name="pastry" value= "285">Add To Cart</button>
+            </div>
+        </div>
+
+       <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="1006.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="1006.jpg" width="200" height="200">        
+                        <div class="desc">Suet Crust Pastry<br><br>
+                            <button class="button" name="pastry" value= "290">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Suet Crust Pastry<br><br>
+                <button class="button" name="pastry" value= "290">Add To Cart</button>
+            </div>
+        </div>
+
+       <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="1007.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="1007.jpg" width="215" height="200">        
+                        <div class="desc">Hot Water Crust Pastry<br><br>
+                            <button class="button" name="pastry" value= "295">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Hot Water Crust Pastry<br><br>
+                <button class="button" name="pastry" value= "295">Add To Cart</button>
+            </div>
+        </div>
+
+       <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="1008.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="1008.jpg" width="200" height="200">        
+                        <div class="desc">Pate Sucree Pastry<br><br>
+                            <button class="button" name="pastry" value= "300">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Pate Sucree Pastry<br><br>
+                <button class="button" name="pastry" value= "300">Add To Cart</button>
+            </div>
+        </div>
+
+       <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="1009.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="1009.jpg" width="200" height="200">        
+                        <div class="desc">Black Forest Pastry<br><br>
+                            <button class="button" name="pastry" value= "305">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Black Forest Pastry<br><br>
+                <button class="button" name="pastry" value= "305">Add To Cart</button>
+            </div>
+        </div>
+
+       <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="1010.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="1010.jpg" width="200" height="200">        
+                        <div class="desc">Pineapple Pastry<br><br>
+                            <button class="button" name="pastry" value= "310">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Pineapple Pastry<br><br>
+                <button class="button" name="pastry" value= "310">Add To Cart</button>
+            </div>
+        </div>
+
+       <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="1011.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="1011.jpg" width="215" height="200">        
+                        <div class="desc">Dark Chocolate Pastry<br><br>
+                            <button class="button" name="pastry" value= "315">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Dark Chocolate Pastry<br>
+                <button class="button" name="pastry" value= "315">Add To Cart</button>
+            </div>
+        </div>
+
+       <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="1012.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="1012.jpg" width="200" height="200">        
+                        <div class="desc">Red Velvet Pastry<br><br>
+                            <button class="button" name="pastry" value= "320">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Red Velvet Pastry<br><br>
+                <button class="button" name="pastry" value= "320">Add To Cart</button>
+            </div>
+        </div>
+
+       <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="1013.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="1013.jpg" width="230" height="200">        
+                        <div class="desc">Fudgy Chocolate Pastry<br><br>
+                            <button class="button" name="pastry" value= "325">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Fudgy Chocolate Pastry<br><br>
+                <button class="button" name="pastry" value= "325">Add To Cart</button>
+            </div>
+        </div>
+
+       <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="1014.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="1014.jpg" width="200" height="200">        
+                        <div class="desc">Fresh Fruit Pastry<br><br>
+                            <button class="button" name="pastry" value= "330">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Fresh Fruit Pastry<br><br><br>
+                <button class="button" name="pastry" value= "330">Add To Cart</button>
+            </div>
+        </div>
+
+       <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="1015.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="1015.jpg" width="200" height="200">        
+                        <div class="desc">Coffee Pastry With Mocha Frosting<br><br>
+                            <button class="button" name="pastry" value= 335">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Coffee Pastry With Mocha Frosting<br>
+                <button class="button" name="pastry" value= "335">Add To Cart</button>
+            </div>
+        </div>
+        </form>
+    </body>
+</html>

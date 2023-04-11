@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>
+            ul
+            {
+                background-color: black;
+                overflow:hidden;
+            }
+            li
+            {
+                float: left;
+            }
+            
+            a
+            {
+                text-decoration: none;
+                color: black;
+                font-size: large;
+            }
+
+            li a,.dropbtn
+            {
+                color: white;
+                padding: 16px;
+                display: inline-block;
+                text-align: center;
+                text-decoration:none;
+            }
+            li a:hover, .dropdown:hover .dropbtn
+            {
+                color: cyan;
+            }
+            .dropdown-content a
+            {
+                color: white;
+                padding: 16px;
+                display: block;
+                text-align: left;
+                text-decoration: none;
+            }
+            .dropdown-content a:hover
+            {
+                color:cyan;
+            }
+            .dropdown:hover .dropdown-content
+            {
+                display: block;
+            }
+            .dropdown-content
+            {
+                display: none;
+                background-color: black;
+                color: white;
+                position: absolute;
+            }
+            div.gallery
+            {
+                margin: 30px;
+                border: 2px solid black;
+                float: left;
+                width:150px;
+            }
+            div.gallery:hover
+            {
+                border:2px solid navy;
+            }
+            div.desc
+            {
+                padding: 20px;
+                text-align: center;
+                font-size: 20px;
+                font-style: bold;
+            }
+            .button
+            {
+                
+                height: 30px;
+                font-size: 15px;
+                width: 120px;
+                background-color:red;
+                color:white;
+                border-radius: 15px;
+                border:2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="page1.html">HOME</a></li>
+            <li class="dropdown">
+                <a href="category.html" class="dropbtn">CATEGORY</a>
+                <div class="dropdown-content">
+                    <a href="bread.html">BREAD</a>
+                    <a href="Allcakes.html">CAKES</a>
+                    <a href="cupcake.html">CUPCAKES</a>
+                    <a href="#">CUSTOMIZED CAKES</a>
+                    <a href="cookies.html">COOKIES</a>
+                    <a href="pastry.html">PASTRIES</a>
+                    <a href="snacks.html">SNACKS</a>
+                </div>
+            </li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="map.html">MAP</a></li>
+            
+            <li><a href="addtocart.php">ADD TO CART</a></li>
+            <li style="float: right;"><a href="profile.php"><img src="user.png" style="width: 25px;height: 25px;"></a></li>
+        </ul>
+        <form action="cookies.php" method="POST">
+        <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="11.png" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="11.png" width="240" height="200">        
+                        <div class="desc">Chocolate Chip Cookies<br><br>
+                            <button  name="cookies" value="205" class="button">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc">Chocolate Chip Cookies<br><br><br>
+                <button class="button" name="cookies" value= "205">Add To Cart</button>
+            </div>
+        </div>
+       
+        <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="12.png" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="12.png" width="240" height="200">        
+                        <div class="desc">Gingersnaps Cookies<br><br>
+                            <button name="cookies" value="210" class="button">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">Gingersnaps Cookies<br><br>
+                <button name="cookies" value="210" class="button">Add To Cart</button>
+            </div>
+        </div>
+            
+         <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="1.png" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="1.png" width="200" height="200">        
+                        <div class="desc">Shortbread Cookies<br><br>
+                            <button name="cookies" value="215" class="button">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Shortbread Cookies<br><br>
+                <button name="cookies" value="215" class="button">Add To Cart</button>
+            </div>
+        </div>
+             
+        <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="3.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="3.jpg" width="200" height="200">        
+                        <div class="desc">Sugar Cookies<br><br>
+                            <button name="cookies" value="220" class="button">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Sugar Cookies<br><br><br>
+                <button name="cookies" value="220" class="button">Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="4.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="4.jpg" width="200" height="200">        
+                        <div class="desc">Molasses Cookies<br><br>
+                            <button name="cookies" value="225" class="button">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Molasses Cookies<br><br><br>
+                <button name="cookies" value="225" class="button">Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="2.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="2.jpg" width="240" height="200">        
+                        <div class="desc">Peanut Butter Cookies<br><br>
+                            <button name="cookies" value="230" class="button">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Peanut Butter Cookies<br><br>
+                <button name="cookies" value="230" class="button">Add To Cart</button>
+            </div>
+        </div>
+
+         <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="5.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="5.jpg" width="200" height="200">        
+                        <div class="desc">Butter Cookies<br><br>
+                            <button name="cookies" value="235" class="button">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Butter Cookies<br><br>
+                <button name="cookies" value="235" class="button">Add To Cart</button>
+            </div>
+        </div>
+    
+        <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="6.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="6.jpg" width="200" height="200">        
+                        <div class="desc">Snowball Cookies<br><br>
+                            <button name="cookies" value="240" class="button">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Snowball Cookies<br><br>
+                <button name="cookies" value="240" class="button">Add To Cart</button>
+            </div>
+        </div>
+
+          <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="7.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="7.jpg" width="200" height="200">        
+                        <div class="desc">Pinwheel Cookies<br><br>
+                            <button name="cookies" value="245" class="button">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Pinwheel Cookies<br><br>
+                <button name="cookies" value="245" class="button">Add To Cart</button>
+            </div>
+        </div>
+
+         <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="8.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="8.jpg" width="200" height="200">        
+                        <div class="desc">Fortune Cookies<br><br>
+                            <button name="cookies" value="250" class="button">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Fortune Cookies<br><br>
+                <button name="cookies" value="250" class="button">Add To Cart</button>
+            </div>
+        </div>
+
+       <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="9.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="9.jpg" width="200" height="200">        
+                        <div class="desc">Icebox Cookies<br><br>
+                            <button name="cookies" value="255" class="button">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Icebox Cookies<br><br>
+                <button name="cookies" value="255" class="button">Add To Cart</button>
+            </div>
+        </div>
+
+       <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="10.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="10.jpg" width="240" height="200">        
+                        <div class="desc">Black and White Cookies<br><br>
+                            <button name="cookies" value="260" class="button">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Black and White Cookies &nbsp;&nbsp;
+                <button name="cookies" value="260" class="button">Add To Cart</button>
+            </div>
+        </div>
+        </form>
+    </body>
+</html>

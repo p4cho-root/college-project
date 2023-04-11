@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page1.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link  rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  </head>
+  <style>
+      nav ul li a{
+          font-size: 22px;
+      }
+    i
+    {
+      color: rgb(24, 2, 2);
+    }
+  </style>
+  <body style="background-color: antiquewhite;">
+    <header>
+    <nav>   
+      <input type="checkbox" id="check">
+       <label for="check" class="checkbtn  animate__animated animate__slideInDown">
+        <i class="fas fa-bars"></i>
+       </label>
+       <ul class="animate__animated animate__slideInDown">
+        <li><a  href="page1.html">HOME</a></li>
+        <li><a  href="category.html">MENU</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <!-- <li><a href="#">Services</a></li> -->
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="map.html">MAP</a></li>
+        <li><a href="login.html">Login/Sign Up</a></li>
+        <li style="float:right;"><a href="profile.php"><img src="user.png" style="width: 25px;height: 25px;"></a></li>
+      </ul>
+    </nav>
+    </header>
+        <style>
+            .loginbox{
+                margin-top: 60px;
+                width:400px;
+                height: 470px;
+                background: #000;
+                color: #fff;
+                top: 50%;
+                left: 50%;
+                position: absolute;
+                transform: translate(-50%,-50%);
+                box-sizing: border-box;
+                padding: 80px 30px;
+            }
+            h1{
+                margin-top: -50px;
+                text-align: center;
+                font-size: 22px;
+            }
+            .loginbox p{
+                margin: 0;
+                padding-top:10px ;
+                font-weight: bold;
+            }
+            .loginbox input{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .loginbox textarea{
+                width: 100%;
+                margin-bottom: 20px;
+                height: 100px;
+            }
+            .loginbox input[type="text"],input[type="password"],textarea
+            {   
+                border:none;
+                border-bottom: 1px solid #fff;
+                background: transparent;
+                outline: none;
+                height: 40px;
+                color: #fff;
+                font-size: 16px;
+            }
+            .loginbox input[type="submit"]
+            {
+                border:none;
+                outline: none;
+                height: 40px;
+                background: #722727;
+                color: #fff;
+                font-size: 18px;
+                border-radius: 20px;
+            }
+            .loginbox input[type="submit"]:hover
+            {
+                cursor: pointer;
+                background: #c03636;
+                color: #000;
+            }
+            .loginbox a{
+                text-decoration: none;
+                font-size: 12px;
+                line-height: 20px;
+                color: darkgray;
+            }
+            .loginbox a:hover
+            {
+                color: #c03636;
+            }
+        </style>
+        <div class="loginbox">
+        <h1>Contact Us</h1>
+        <form>
+            <p>Username</p>
+            <input type="text" name="" placeholder="Enter Username">
+            <p>Mail Id</p>
+            <input type="text" name="" placeholder="Enter your mail id">
+            <p>Message</p>
+            <textarea name="" placeholder="Write here.." ></textarea>
+            <input type="submit" name="" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
+
+
+

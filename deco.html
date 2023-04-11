@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            ul
+            {
+                background-color: black;
+                overflow:hidden;
+            }
+            li
+            {
+                float: left;
+            }
+            
+            a
+            {
+                text-decoration: none;
+                color: black;
+                font-size: large;
+            }
+
+            li a,.dropbtn
+            {
+                color: white;
+                padding: 16px;
+                display: inline-block;
+                text-align: center;
+                text-decoration:none;
+            }
+            li a:hover, .dropdown:hover .dropbtn
+            {
+                color: cyan;
+            }
+            .dropdown-content a
+            {
+                color: white;
+                padding: 16px;
+                display: block;
+                text-align: left;
+                text-decoration: none;
+            }
+            .dropdown-content a:hover
+            {
+                color:cyan;
+            }
+            .dropdown:hover .dropdown-content
+            {
+                display: block;
+            }
+            .dropdown-content
+            {
+                display: none;
+                background-color: black;
+                color: white;
+                position: absolute;
+            }
+            div.gallery
+            {
+                margin: 30px;
+                border: 2px solid black;
+                float: left;
+                width:150px;
+            }
+            div.gallery:hover
+            {
+                border:2px solid navy;
+            }
+            div.desc
+            {
+                padding: 15px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">CATEGORY</a>
+                <div class="dropdown-content">
+                    <a href="#">BREAD</a>
+                    <a href="#">CAKES</a>
+                    <a href="#">COOKIES</a>
+                    <a href="#">DECORATION</a>
+                    <a href="#">PASTRIES</a>
+                    <a href="#">SNACKS</a>
+                    <a href="#">OTHER BAKERY PRODUCTS</a>
+                </div>
+            </li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">MAP</a></li>
+            <li class="dropdown">
+                <a href="#">SORT</a>
+                <div class="dropdown-content">
+                    <a href="#">MINIMUM TO MAXIMUM PRICE</a>
+                    <a href="#">MAXIMUM TO MINIMUM PRICE</a>
+                </div>
+            </li>
+            <li><a href="#">ADD TO CART</a></li>
+        </ul>
+   
+       
+            
+     
+        <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="0011.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="0011.jpg" width="200" height="200">        
+                        <div class="desc">Knife</div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc">Knife</div>
+        </div>
+
+      <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="0012.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="0012.jpg" width="200" height="200">        
+                        <div class="desc">Balloons</div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc">Balloons</div>
+        </div>
+
+
+     <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="0013.jfif" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="0013.jfif" width="200" height="200">        
+                        <div class="desc">Birthday Caps</div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc">Birthday Caps</div>
+        </div>
+
+
+     <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="0014.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="0014.jpg" width="200" height="200">        
+                        <div class="desc">Alphabet</div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc">Alphabet</div>
+        </div>
+
+
+    <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="0015.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="0015.jpg" width="200" height="200">        
+                        <div class="desc">Candles</div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc">Candles</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="#">
+            <div class="dropdown">
+                <img src="spc.jpg" width="150" height="150">
+                <div class="dropdown-content">
+                    <img src="spc.jpg" width="200" height="200">        
+                    <div class="desc">Sparkler Candles</div>
+                </div>
+            </div>
+        </a>
+        <div class="desc">Sparkler Candles</div>
+    </div>
+
+
+    <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="0016.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="0016.jpg" width="200" height="200">        
+                        <div class="desc">Tiara</div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc">Tiara</div>
+    </div>
+  
+        <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="0017.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="0017.jpg" width="200" height="200">        
+                        <div class="desc">Customized Tags</div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc">Customized Tags</div>
+        </div>
+  
+
+
+
+    </body>
+</html>

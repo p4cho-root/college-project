@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset = "UTF-8" />
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <style>
+         body{
+            margin: 20;
+            padding: 20;
+            background-size: cover;
+            background-position: center;
+            background-color: antiquewhite;
+        }
+        option
+        {
+            font-size: 20px;
+        }
+        .info{
+            font-size: 25px;
+        }
+        input[type="radio"]
+        {
+            width: 18px;
+            height:18px;
+        }
+        .info input[type="text"]
+        {
+            border:none;
+            border-bottom: 2px solid black;
+            background: transparent;
+            outline: none;
+            color:rgb(24,2,2);
+            font-size: 22px;
+        }
+        .type{
+            font-size: 25px;
+        }
+        .select input[type="submit"],input[type="reset"]
+        {
+            border:none;
+            outline: none;
+            height: 30px;
+            background: #722727;
+            color: #fff;
+            font-size: 18px;
+            width: 100px;
+            border-radius: 10px;
+}
+        .select input[type="submit"]:hover,input[type="reset"]:hover
+        {
+            cursor: pointer;
+            background: #f73d3d;
+            color: #000;
+        }
+    </style>
+    <form action="something.php" method="POST">
+      <fieldset>
+        <legend><h2>PLEASE FILL THE BELOW INFORMATION</h2></legend>
+            <div class="info">
+                <p>
+                    <label>Name On The Cake :</label>
+                    <input type = "text"   name="cake_name" required/>
+                </p>
+                <p>
+                    <label>Occasion :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                    <input type = "text"   name="occasion" required />
+                </p>
+            </div>
+      </fieldset>
+
+      <fieldset>
+        <legend><h2>SELECT TYPE OF CAKE</h2></legend>
+        <div class="type">
+          <label>Shape :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </label>
+            <select style="width: 200px;height: 25px; border: 1px solid black;">
+                <option selected>--------------------------------</option>
+                <option>Square</option>
+                <option>Round</option>
+                <option>Oval</option>
+                <option>Octogonal</option>
+                <option>Flower</option>
+                <option></option>
+                </select>
+        <p>
+            <label>No of tiers : </label>
+                <select style="width: 200px;height: 25px; border: 1px solid black;">
+                    <option selected>---------------------------------</option>
+                    <option>1 tier</option>
+                    <option>2 tier</option>
+                </select>
+        </p>
+        <p>
+            <label>Flavour :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+            <select style="width: 200px;height: 25px;border: 1px solid black;">
+                <option selected>--------------------------------</option>
+                <option>Chocolate</option>
+                <option>Butterscotch</option>
+                <option>Vanilla</option>
+            </select>
+        </p>
+        <p>
+            <label>Frosting :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+            <input type="radio" name = "ice" value="1"/>&nbsp;&nbsp;&nbsp;<label>Fondant</label><br>
+            <input type = 'radio' name = "ice" value="2" style="margin-left:138px;" />&nbsp;&nbsp;&nbsp;<label>Cream</label>
+          </p>
+        </div>
+      </fieldset>
+    <br><br>
+        <div class="select">
+            <input type = reset name = Ok style="float:left;margin:10px;"/><input type = "submit" name = cancel style="float:right;margin:10px;"/>
+        </div>
+    
+    </form>
+  </body>
+</html>

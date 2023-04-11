@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=2">
+        <style>
+            body
+            {
+                background-color: antiquewhite;
+            }
+            ul
+            {
+                height: 60px;
+                background-color: rgb(24,2,2);
+                overflow:hidden;
+            }
+            li
+            {
+                float: left;
+                list-style-type: none;
+            }
+            
+            a
+            {
+                text-decoration: none;
+                color: white;
+                font-size: large;
+            }
+
+            li a,.dropbtn
+            {
+                color: white;
+                padding: 16px;
+                display: inline-block;
+                text-align: center;
+                text-decoration:none;
+            }
+            li a:hover, .dropdown:hover .dropbtn
+            {
+                color: rgb(245,210,158);
+                border-bottom:1px solid rgb(245, 210, 158);
+            }
+            .dropdown-content a
+            {
+                color: white;
+                padding-left: 16px;
+                display: block;
+                text-align: left;
+                text-decoration: none;
+            }
+            .dropdown-content a:hover
+            {
+                color:rgb(245,210,158);
+            }
+            .dropdown:hover .dropdown-content
+            {
+                display: block;
+            }
+            .dropdown-content
+            {
+                display: none;
+                background-color: rgb(24,2,2);
+                color: white;
+                position: absolute;
+            }
+            div.gallery
+            {
+                background-color: beige;
+                margin: 30px;
+                border: 2px solid rgb(24,2,2);
+                float: left;
+                width:150px;
+            }
+            div.gallery:hover
+            {
+                border:2px solid rgb(136,30,30);
+            }
+            div.desc
+            {
+                padding: 15px;
+                text-align: center;
+                color: rgb(24,2,2);
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="page1.html">HOME</a></li>
+            <li class="dropdown">
+                <a href="category.html" class="dropbtn">CATEGORY</a>
+                <div class="dropdown-content">
+                    <a href="bread.php">BREAD</a>
+                    <a href="Allcakes.php">CAKES</a>
+                    <a href="cupcake.php">CUPCAKES</a>
+                <!--<a href="customized.php">CUSTOMIZED CAKES</a>--->
+                    <a href="cookies.php">COOKIES</a>
+                    <a href="pastry.php">PASTRIES</a>
+                    <a href="snacks.php">SNACKS</a>
+                </div>
+            </li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <!-- <li><a href="contact.html">CONTACT</a></li> -->
+            <li><a href="map.html">MAP</a></li>
+            <li><a href="addtocart.php">CART</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            <li style="float: right;"><a href="profile.php"><img src="user.png" style="width: 25px;height: 25px;"></a></li>
+        </ul>
+        <br><br><br>
+        <div class="gallery">
+            <a href="bread.php">
+                    <img src="bread.jpg" width="150" height="150">
+            </a>
+            <div class="desc"><br><br>BREADS</div>
+        </div>
+        <div class="gallery">
+            <a href="Allcakes.php">
+                    <img src="cakes.jpg" width="150" height="150">
+            </a>
+            <div class="desc"><br><br>ALL CAKES</div>
+        </div>
+        
+        <!---<div class="gallery">
+            <a href="customized.php">
+                    <img src="cat2.jpg" width="150" height="150">
+            </a>
+            <div class="desc"><br>CUSTOMIZED CAKES</div>
+        </div>--->
+        <div class="gallery">
+            <a href="cookies.php">
+                    <img src="cookies.jpg" width="150" height="150">
+            </a>
+            <div class="desc"><br><br>COOKIES</div>
+        </div>
+        <div class="gallery">
+            <a href="cupcake.php">
+                    <img src="cupcakes.jpg" width="150" height="150">
+            </a>
+            <div class="desc"><br><br>CUPCAKES</div>
+        </div>
+        <div class="gallery">
+            <a href="snacks.php">
+                    <img src="snack.jpg" width="150" height="150">
+            </a>
+            <div class="desc"><br><br>SNACKS</div>
+        </div>
+        
+        <div class="gallery">
+            <a href="pastry.php">
+                    <img src="pastry.jpg" width="150" height="150">
+            </a>
+            <div class="desc"><br><br>PASTRIES</div>
+        </div>
+    </body>
+</html>

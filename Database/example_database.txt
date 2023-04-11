@@ -1,0 +1,186 @@
+LOGIN
+
+create sequence log start 1 increment 3;
+create table login(LID serial primary key,UserName varchar(60),Passwordl varchar(20),cid integer );
+
+WEBUSER
+
+create table webuser(usertype varchar(20),lid integer references login(lid) on delete cascade on update set null);
+select * from webuser;
+
+CUSTOMERS
+
+create sequence customer start 100 increment 2;
+create table customers(CID serial primary key,Phone varchar(15),Email varchar(40),Name varchar(60));
+select * from customers;
+
+PRODUCT
+
+create sequence prod start 1000 increment 1;
+create table product(pid serial primary key,pname varchar(40),pcategory varchar(20),ptype varchar(10),pimage varchar(30),price float);
+
+insert into product values(nextval('prod'),'Toast','Breads','veg.png','101.jpg',25);
+insert into product values(nextval('prod'),'Banana Bread','Breads','veg.png','102.jpg',40);
+insert into product values(nextval('prod'),'Baguette','Breads','veg.png','103.jpg',45);
+insert into product values(nextval('prod'),'Pitta Bread','Breads','veg.png','104.jpg',35);
+insert into product values(nextval('prod'),'White Bread','Breads','veg.png','105.jpg',30);
+insert into product values(nextval('prod'),'Brioche Bread','Breads','veg.png','106.jpg',50);
+insert into product values(nextval('prod'),'Brown Bread','Breads','veg.png','107.jpg',30);
+
+insert into product values(nextval('prod'),'Rye Bread','Breads','veg.png','108.jpg',30);
+
+insert into product values(nextval('prod'),'Wheat Bread','Breads','veg.png','109.jpg',30);
+
+insert into product values(nextval('prod'),'Bun Bread','Breads','veg.png','110.jfif',50);
+
+insert into product values(nextval('prod'),'Apple Cake','Cakes','veg.png','38.jpg',300);
+
+insert into product values(nextval('prod'),'Banana Cake','Cakes','veg.png','37.jpeg',350);
+
+insert into product values(nextval('prod'),'Battenberg Cake','Cakes','veg.png','36.jpg',350);
+
+insert into product values(nextval('prod'),'Black Forest Cake','Cakes','veg.png','35.jpg',400);
+
+insert into product values(nextval('prod'),'Brownie Cake','Cakes','veg.png','34.jpg',400);
+
+insert into product values(nextval('prod'),'Cheese Cake','Cakes','veg.png','33.jpg',450);
+
+insert into product values(nextval('prod'),'Chocolate Cake','Cakes','veg.png','32.jpg',400);
+
+insert into product values(nextval('prod'),'Fruit Cake','Cakes','veg.png','31.jpg',350);
+
+insert into product values(nextval('prod'),'Jar Cake','Cakes','veg.png','29.jpg',300);
+
+insert into product values(nextval('prod'),'Rainbow Cake','Cakes','veg.png','27.jpg',400);
+
+insert into product values(nextval('prod'),'Heart Shaped Cake','Cakes','veg.png','30.jpg',400);
+
+insert into product values(nextval('prod'),'Chocolate Chip Cookies','Cookies','veg.png','11.png',80);
+
+insert into product values(nextval('prod'),'GingerSnaps Cookies','Cookies','veg.png','12.png',50);
+
+insert into product values(nextval('prod'),'Shortbread Cookies','Cookies','veg.png','1.png',60);
+
+insert into product values(nextval('prod'),'Sugar Cookies','Cookies','veg.png','3.jpg',80);
+
+insert into product values(nextval('prod'),'Peanut Butter Cookies','Cookies','veg.png','2.jpg',100);
+
+insert into product values(nextval('prod'),'Molasses Cookies','Cookies','veg.png','4.jpg',50);
+
+insert into product values(nextval('prod'),'Butter Cookies','Cookies','veg.png','5.jpg',60);
+
+insert into product values(nextval('prod'),'Snowball Cookies','Cookies','veg.png','6.jpg',60);
+
+insert into product values(nextval('prod'),'Pinwheel Cookies','Cookies','veg.png','7.jpg',80);
+
+insert into product values(nextval('prod'),'Fortune Cookies','Cookies','veg.png','8.jpg',80);
+
+insert into product values(nextval('prod'),'Icebox Cookies','Cookies','veg.png','9.jpg',55);
+
+insert into product values(nextval('prod'),'Black and White Cookies','Cookies','veg.png','10.jpg',60);
+
+insert into product values(nextval('prod'),'Shortcrust Pastry','Pastries','veg.png','1001.jpg',110);
+
+insert into product values(nextval('prod'),'Puff Pastry','Pastries','veg.png','1002.jpg',100);
+
+insert into product values(nextval('prod'),'Flaky Pastry','Pastries','veg.png','1003.jpg',80);
+
+insert into product values(nextval('prod'),'Rough Puff Pastry','Pastries','veg.png','1004.jpg',80);
+
+insert into product values(nextval('prod'),'Filo Pastry','Pastries','veg.png','1005.jpg',80);
+
+insert into product values(nextval('prod'),'Suet Crust Pastry','Pastries','veg.png','1006.jpg',100);
+
+insert into product values(nextval('prod'),'Hotwater Crust Pastry','Pastries','veg.png','1007.jpg',120);
+
+insert into product values(nextval('prod'),'Pate Sucree Pastry','Pastries','veg.png','1008.jpg',100);
+
+insert into product values(nextval('prod'),'Black Forest Pastry','Pastries','veg.png','1009.jpg',120);
+
+insert into product values(nextval('prod'),'Pineapple Pastry','Pastries','veg.png','1010.jpg',100);
+
+insert into product values(nextval('prod'),'Dark Chocolate Pastry','Pastries','veg.png','1011.jpg',130);
+
+insert into product values(nextval('prod'),'Red Velvet Pastry','Pastries','veg.png','1012.jpg',130);
+
+insert into product values(nextval('prod'),'Fudgy Chocolate Pastry','Pastries','veg.png','1013.jpg',100);
+
+insert into product values(nextval('prod'),'Fresh Fruit Pastry','Pastries','veg.png','1014.jpg',100);
+
+insert into product values(nextval('prod'),'Coffee Pastry with Mocha Frosting','Pastries','veg.png','1015.jpg',120);
+
+insert into product values(nextval('prod'),'Croquette','Snacks','veg.png','16.jpg',100);
+
+insert into product values(nextval('prod'),'Doughnut','Snacks','veg.png','17.jpg',100);
+
+insert into product values(nextval('prod'),'Pizza','Snacks','veg.png','20.jpg',250);
+
+insert into product values(nextval('prod'),'Croissant','Snacks','veg.png','2222.jpg',150);
+
+insert into product values(nextval('prod'),'Sandwich','Snacks','veg.png','3333.jpg',80);
+
+insert into product values(nextval('prod'),'Sponge Cake','Snacks','veg.png','4444.jpg',100);
+
+insert into product values(nextval('prod'),'Fruit Pie','Snacks','veg.png','5555.jpg',110);
+
+insert into product values(nextval('prod'),'Paneer Puff','Snacks','veg.png','6666.jpg',160);
+
+insert into product values(nextval('prod'),'Vegetable Puff','Snacks','veg.png','7777.jpg',150);
+
+insert into product values(nextval('prod'),'Chicken Puff','Snacks','nonveg.png','8888.jpg',250);
+
+insert into product values(nextval('prod'),'Strawberry Puff','Snacks','veg.png','9999.jpg',180);
+
+insert into product values(nextval('prod'),'Aloo Puff','Snacks','veg.png','0000.jpeg',80);
+
+insert into product values(nextval('prod'),'Cream Rolls','Snacks','veg.png','1111.jpg',50);
+
+insert into product values(nextval('prod'),'Coconut Cupcake','Cupcakes','veg.png','coconut_cupcake.jpg',40);
+insert into product values(nextval('prod'),'Dark Chocolate Cupcake','Cupcakes','veg.png','dark_chocolate_cupacke.jpg',45);
+
+insert into product values(nextval('prod'),'Fluffy Funfetti Cupcake','Cupcakes','veg.png','fluffy_funfetti_cupcake.jpg',45);
+
+insert into product values(nextval('prod'),'Irish Cream Cupcakes','Cupcakes','veg.png','irish_cream_cupcake.jpg',45);
+
+insert into product values(nextval('prod'),'Margarita Cupcakes','Cupcakes','veg.png','margarita_cupcake.jpg',40);
+
+insert into product values(nextval('prod'),'Mint Chocolate Cupcakes','Cupcakes','veg.png','mint_chocolate_cupcake.jpg',50);
+
+insert into product values(nextval('prod'),'Mocha Cupcakes','Cupcakes','veg.png','mocha_cupcake.jpg',45);
+
+insert into product values(nextval('prod'),'Oreo Cupcakes','Cupcakes','veg.png','oreo_cupcake.jpg',45);
+
+insert into product values(nextval('prod'),'Pina Colada Cupcakes','Cupcakes','veg.png','pina_colada_cupcake.jpg',45);
+
+insert into product values(nextval('prod'),'Pumpkin Cupcakes','Cupcakes','veg.png','pumpkin_cupcake.jpg',50);
+
+insert into product values(nextval('prod'),'Red Velvet Cupcakes','Cupcakes','veg.png','red_velvet_cupcake.jpg',50);
+
+select * from product;
+
+CART
+
+create table cart(custid int references customers(cid),prodid int references product(pid),quantity integer,weight float,O_status boolean,price float);
+
+select * from cart;
+
+ORDER
+
+create sequence ord start 200  increment 1;
+
+create table orders(ord_no serial primary key,address text,total float,ord_date date,cid int references customers(cid),pno varchar(15));
+
+//pno in above order table is count of product for that perticular product.
+
+select * from orders;
+
+PAYMENT
+
+create sequence pay start 400  increment 2;
+create table payment(pay_id serial primary key,p_date date,details varchar(30),order_no int references orders,fullname varchar(60),pin varchar(7),landmark varchar(40),phone varchar(15));
+select * from payment;
+
+ORDER_PRODUCT(3rd Table)
+
+create table order_product(o_id integer,p_id integer,status varchar(10));
+select * from order_product;

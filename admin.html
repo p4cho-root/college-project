@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+        Login Form Design
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body
+        {
+            background-color: antiquewhite;
+        }
+        button
+        {
+            background-color: black;
+            color: white;
+            float: right;
+        }
+        button a
+        {
+            font-size: 20px;
+            width: auto;
+            height: auto;
+            color: white;
+            float: right;
+            background-color: black;
+            text-decoration: none;
+        }
+        .loginbox input[type="submit"]
+        {
+            background-color:#722727;            
+        }
+        .loginbox a
+        {
+            background-color: #722727;
+        }
+        .loginbox input[type="submit"]:hover
+        {
+            background: #c03636;
+        }
+        .loginbox a:hover
+        {
+            background: #c03636;
+        }
+    </style>
+    </head>
+    <body>
+    <div class="loginbox">
+    <img src="ava.png" class="avatar">
+    <button><a href="index.html" style="color:white;background-color: black;width: 20px;height: 5px;" value=>X</a></button>
+    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login Here </h1>
+    <form action="admin.php" method="GET">
+    <p>Username</p>
+    <input type="text" name="admin" placeholder="Enter Username" required>
+    <p>Password</p>
+    <input type="password" name="adpassword" placeholder="Enter password" required>
+    <input type="submit" value="Login">
+    </form>

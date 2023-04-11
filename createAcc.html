@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+        Login Form Design
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        h1{
+            margin-top: -130px;
+            margin-left: -200px;
+        }
+        button
+        {
+            /* background-color: black;
+            color: white;
+            float: right; */
+             background-color: black;
+            color: white;
+            float: right;
+            margin-top: -80px;
+        }
+        button a
+        {
+            font-size: 20px;
+            width: auto;
+            height: auto;
+            color: white;
+            float: right;
+            background-color: black;
+            text-decoration: none;
+        }
+        .avatar{
+   
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: relative;
+            top:-170px;
+            left:115px;
+            right: 90px;
+    /* left: calc(100% -50px);  */
+        }
+        .loginbox
+        {
+            height: 670px;
+            width: 400px;
+            /* height: 580px;
+            width: 350px; */
+        }
+        .loginbox input[type="submit"]
+        {
+            background-color:#722727;            
+        }
+        .loginbox a
+        {
+            background-color: #722727;
+        }
+        .loginbox input[type="submit"]:hover
+        {
+            background: #c03636;
+        }
+        .loginbox a:hover
+        {
+            background: #c03636;
+        }
+        body
+        {
+            background-color:antiquewhite;
+        }
+    </style>
+    </head>
+<body>
+<div class="loginbox">
+    <br><br><br>
+    <img src="ava.png" class="avatar">
+    <button><a href="login.html" style="color:white;background-color: black;width: 20px;height: 5px;" value=>X</a></button>
+        <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create Account </h1>
+        <form action="CreateAcc.php" method="POST">
+            <p>Username</p>
+            <input type="text"  name ="username" placeholder="Enter Username" required>
+            <p>Name</p>
+            <input type="text"  name ="cname" placeholder="FirstName LastName" required>
+            <p>Phone No</p>
+            <input type="text" name="phone" placeholder="Enter Phone Number">
+            <p>Mail Id</p>
+            <input type="text" name="mail" placeholder="Enter Mail ID">
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Enter password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"required>
+            <p>Confirm Password</p>
+            <input type="password" name="cpassword" placeholder="Enter password" required>
+            <input type="submit" value="Create Account">
+        </form>
+   

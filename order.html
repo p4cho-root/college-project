@@ -1,0 +1,114 @@
+<html>
+    <style>
+        input[type="text"]
+        {
+            background-color:rgb(24, 2, 2);
+            color:white;
+            width: 250px;
+            height: 30px;
+            border:black;
+            border-bottom: 2px solid white;
+        }
+        body
+        {
+            background-color: antiquewhite;
+        }
+        .orderboxs
+        {
+            background-color:rgb(24, 2, 2);
+            margin-left: 400px;
+            text-align: center;
+            border: 2px solid white;
+            width:450px;
+            height: 500px;
+        }
+        p
+        {
+            font-size: 20px;
+            color: white;
+        }
+        input[type="textarea"]
+        {
+            background-color:rgb(24, 2, 2);
+            color:white;
+            width: 250px;
+            height:80px;
+            border: black;
+            border-bottom: 2px solid white;
+            font-size: 15px;
+        }
+        input[type="text"]:hover
+        {
+            color: white;
+            background-color:rgb(24, 2, 2);
+        }
+        input[type="textarea"]:hover
+        {
+            color: white;
+            background-color:rgb(24, 2, 2);
+        }
+        a
+        {
+            padding:4px;
+            font-size: 20px;
+            text-decoration: none;
+            color:white;
+            background-color:#722727;
+            border:2px solid white;
+            border-radius: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-top: 4px;
+        }
+        a:hover
+        {
+            background: #c03636;
+            /* background-color: red; */
+            border-radius: 15px;
+            color: white;
+            border: 2px solid white;
+        }
+
+        input[type="submit"]
+        {
+            padding:4px;
+            font-size: 19px;
+            background-color: #722727;
+            margin-top:4px;
+            color:white;
+            border:2px solid white;
+            border-radius: 20px;
+            margin-right:80px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        input[type="submit"]:hover
+        {
+            background: #c03636;
+            /* background-color: red; */
+            border-radius: 15px;
+            color: white;
+            border: 2px solid white;
+        }
+    </style>
+    <body><br>
+        <div class="orderboxs">
+    <form action="order.php" method="POST">
+    <h1 style="font-size: 30px;color: white;">Order Details</h1>
+    <p>Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;
+    <input type="text" name="oname" placeholder="FirstName      LastName" required></p>
+    <p>Phone No:&nbsp;<input type="text" name="pno" required>&nbsp;</p>
+    <p>Address&nbsp;:&nbsp;&nbsp;<input type="textarea" name="addr" required></p>
+    <p>Pin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;
+    <input type="text" name="pn" required>&nbsp;</p>
+    <p>Landmark:&nbsp;<input type="text" name="landm" required>&nbsp;</p>
+    <p style="margin-left:-90px;">Pay Type&nbsp;&nbsp;:<input type="radio" name="pay" value="COD">Cash On Delivery<br>
+    <input type="radio" name="pay" value="Card" style="margin-left: 63px;">Card Payment</p>
+    <a href="bill.php" style="margin-left: 160px; float:left;">Cancel</a>
+<input type="submit" value="Continue" style="float: right;">
+</form>
+</div>
+</body>
+</html>
+    

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            ul
+            {
+                background-color: black;
+                overflow:hidden;
+            }
+            li
+            {
+                float: left;
+            }
+            
+            a
+            {
+                text-decoration: none;
+                color: black;
+                font-size: large;
+            }
+
+            li a,.dropbtn
+            {
+                color: white;
+                padding: 16px;
+                display: inline-block;
+                text-align: center;
+                text-decoration:none;
+            }
+            li a:hover, .dropdown:hover .dropbtn
+            {
+                color: cyan;
+            }
+            .dropdown-content a
+            {
+                color: white;
+                padding: 16px;
+                display: block;
+                text-align: left;
+                text-decoration: none;
+            }
+            .dropdown-content a:hover
+            {
+                color:cyan;
+            }
+            .dropdown:hover .dropdown-content
+            {
+                display: block;
+            }
+            .dropdown-content
+            {
+                display: none;
+                background-color: black;
+                color: white;
+                position: absolute;
+            }
+            div.gallery
+            {
+                margin: 30px;
+                border: 2px solid black;
+                float: left;
+                width:150px;
+            }
+            div.gallery:hover
+            {
+                border:2px solid navy;
+            }
+            div.desc
+            {
+                padding: 15px;
+                text-align: center;
+                font-size: 20px;
+                font-style: bold;
+            }
+            .button
+            {
+                
+                height: 30px;
+                font-size: 15px;
+                width: 120px;
+                background-color:red;
+                color:white;
+                border-radius: 15px;
+                border:2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="page1.html">HOME</a></li>
+            <li class="dropdown">
+                <a href="category.html" class="dropbtn">CATEGORY</a>
+                <div class="dropdown-content">
+                    <a href="bread.html">BREAD</a>
+                    <a href="Allcakes.html">CAKES</a>
+                    <a href="cupcake.html">CUPCAKES</a>
+                    <a href="#">CUSTOMIZED CAKES</a>
+                    <a href="cookies.html">COOKIES</a>
+                    <a href="pastry.html">PASTRIES</a>
+                    <a href="snacks.html">SNACKS</a>
+                    
+                </div>
+            </li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="map.html">MAP</a></li>
+            <li><a href="addtocart.php">ADD TO CART</a></li>
+            <li style="float: right;"><a href="profile.php"><img src="user.png" style="width: 25px;height: 25px;"></a></li>
+        </ul>
+   
+<form action="Allcakes.php" method="POST">
+<div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="38.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="38.jpg" width="220" height="200">        
+                        <div class="desc">Apple Cake<br><br>
+                            <button class="button" name="cakes" value= "150">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Apple Cake<br><br><br>
+                <button class="button" name="cakes" value= "150">Add To Cart</button>
+            </div>
+        </div>
+            
+         <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="37.jpeg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="37.jpeg" width="200" height="200">        
+                        <div class="desc">Banana Cake<br><br>
+                            <button class="button" name="cakes" value= "155">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Banana Cake<br><br>
+                <button class="button" name="cakes" value= "155">Add To Cart</button>
+            </div>
+        </div>
+             
+     <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="36.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="36.jpg" width="200" height="200">        
+                        <div class="desc">Battenberg Cake<br><br>
+                            <button class="button" name="cakes" value= "160">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Battenberg Cake<br><br>
+                <button class="button" name="cakes" value= "160">Add To Cart</button>
+            </div>
+        </div>
+
+             <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="35.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="35.jpg" width="200" height="200">        
+                        <div class="desc">Black Forest Cake<br><br>
+                            <button class="button" name="cakes" value= "165">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Black Forest Cake<br><br>
+                <button class="button" name="cakes" value= "165">Add To Cart</button>
+            </div>
+        </div>
+
+        
+
+  <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="34.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="34.jpg" width="200" height="200">        
+                        <div class="desc">Brownie Cake<br><br>
+                            <button class="button" name="cakes" value= "170">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Brownie Cake<br><br>
+                <button class="button" name="cakes" value= "170">Add To Cart</button>
+            </div>
+        </div>
+
+         <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="33.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="33.jpg" width="200" height="200">        
+                        <div class="desc">Cheesecake<br><br>
+                            <button class="button" name="cakes" value= "175">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Cheesecake<br><br><br>
+                <button class="button" name="cakes" value= "175">Add To Cart</button>
+            </div>
+        </div>
+    
+        <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="32.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="32.jpg" width="200" height="200">        
+                        <div class="desc">Chocolate Cake<br><br>
+                            <button class="button" name="cakes" value= "180">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Chocolate Cake<br><br>
+                <button class="button" name="cakes" value= "180">Add To Cart</button>
+            </div>
+        </div>
+
+          <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="31.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="31.jpg" width="200" height="200">        
+                        <div class="desc">Fruit Cake<br><br>
+                            <button class="button" name="cakes" value= "185">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Fruit Cake<br><br><br>
+                <button class="button" name="cakes" value= "185">Add To Cart</button>
+            </div>
+        </div>
+
+      
+
+       <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="29.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="29.jpg" width="200" height="200">        
+                        <div class="desc">Jar Cake<br><br>
+                            <button class="button" name="cakes" value= "190">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Jar Cake<br><br><br>
+                <button class="button" name="cakes" value= "190">Add To Cart</button>
+            </div>
+        </div>
+
+       <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="27.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="27.jpg" width="220" height="200">        
+                        <div class="desc">Rainbow Cake<br><br>
+                            <button class="button" name="cakes" value= "195">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Rainbow Cake<br><br>
+                <button class="button" name="cakes" value= "195">Add To Cart</button>
+            </div>
+        </div>
+   <div class="gallery">
+            <a target="_blank" href="#">
+                <div class="dropdown">
+                    <img src="30.jpg" width="150" height="150">
+                    <div class="dropdown-content">
+                        <img src="30.jpg" width="200" height="200">        
+                        <div class="desc">Heart-Shaped Cake<br><br>
+                            <button class="button" name="cakes" value= "200">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="desc"><img src="veg.png" width="20" height="20">&nbsp;Heart-Shaped Cake<br><br>
+                <button class="button" name="cakes" value= "200">Add To Cart</button>
+            </div>
+        </div>
+        </form>
+    </body>
+</html>

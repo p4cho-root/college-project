@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+    <style>
+          body
+        {
+            background-color: antiquewhite;
+        }
+        .loginbox
+        {
+            background-color:rgb(24, 2, 2);
+            border: 4px solid black;
+            color: white;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            box-sizing: border-box;
+            padding: 70px 30px;
+            height: 450px;
+            width: 500px;
+        }
+        h1
+        {
+            margin: -90px;
+            padding: 0 0 100px;
+            text-align: center;
+            font-size: 22px;
+        }
+        
+        .loginbox p
+        {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .loginbox input[type="text"], input[type="password"]
+        {
+            background: transparent;
+            border-top: rgb(114, 112, 112);
+            border-left: rgb(114, 112, 112);
+            border-right: rgb(114, 112, 112);
+            border-bottom: 1px solid white;
+            color: white;
+            font-size: 20px;
+        }
+
+        
+
+        .loginbox select
+        {
+            background:transparent;
+            color: white;
+            font-size: 20px;
+            border: 2px  solid black;
+        }
+        .loginbox select option
+        {
+            background-color: black;
+            color: white;
+        }
+
+        a
+        {
+            text-decoration: none;
+            color: white;
+        }
+        .button
+        {
+            color: white;
+            background-color: #722727;
+            width: 200px;
+            height: 40px;
+            border-radius: 15px;
+            border: 2px solid black;
+            font-size: 20px;
+        }
+
+        .button:hover
+        {
+            background: #c03636;
+            /* background-color: red; */
+            border-radius: 15px;
+            color: white;
+            border: 2px solid white;
+        }
+
+        </style>
+    <div class="loginbox">
+        <br><br><br>
+        <h1>Card Payment </h1><br>
+        <form action="payment.php" method="POST">
+            <p>Card Number&nbsp;<font color="red">*</font>&nbsp;:
+            <input type="text"  name ="cardno" placeholder="Enter Card Number" size=20 required></p><br><br>
+            <p size=>Card Type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="red">*</font> :&nbsp;&nbsp;
+            <select name="cardt">
+                <option selected value="none">Select</option>
+                <option value="1">Master  Card</option>
+                <option value="2">Rupay</option>
+                <option value="3">Visa</option>
+                <option value="4">Visa electron</option>
+                <option value="5">Maestro</option>
+            </select></p>
+            <br><br>
+            <p >CVV&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="red">*</font>:&nbsp;
+            <input type="password" placeholder="Enter CVV code" size="20" name="cvv" required></p><br><br>
+            <p>Expiry Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="red">*</font>:&nbsp; &nbsp;
+                <select name="month">
+                <option value="none">--</option>
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <select name="year">
+                <option value="none"selected>--</option>
+                <option value="1">21</option>
+                <option value="2">22</option>
+                <option value="3">23</option>
+                <option value="4">24</option>
+                <option value="5">25</option>
+                <option value="6">26</option>
+                <option value="7">27</option>
+                <option value="8">28</option>
+                <option value="9">29</option>
+                <option value="10">30</option>
+                <option value="11">31</option>
+                <option value="12">32</option>
+                <option value="13">33</option>
+                <option value="14">34</option>
+                <option value="15">35</option>
+            </select><br>
